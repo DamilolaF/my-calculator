@@ -1,7 +1,61 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+
 *{
     box-sizing: border-box;
 }
 
 body{
     background-color:aquamarine;
+    font: 200% Montserrat;
+    height: 100vh;
 }
+
+.cal-container {
+    /* height: 100%;
+    margin: 0 auto;
+    max-width: 375px; */
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 80vh;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(120px auto) repeat(5, 100px);
+}
+.output {
+    grid-column: 1 / -1;
+    background-color: gray;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 30px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+.output .input-before {
+    color: rgba(255, 255, 255, .75);
+    font-size: 1.5rem;
+  }
+  
+  .output .input-current{
+    color: white;
+    font-size: 2.5rem;
+  }
+  button {
+    cursor: pointer;
+    font-size: 1.5rem;
+    border: 1px solid black;
+    outline: none;
+    background-color: rgba(255, 255, 255, .75);
+    padding: 10px;
+    margin: 5px;
+  }
+  button:hover {
+    background-color: rgba(241, 233, 233, 0.9);
+  }
+  .two-space {
+    grid-column: span 2;
+    background-color: brown;
+    color: cornsilk;
+  }
