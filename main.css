@@ -1,24 +1,23 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
 
 
-*{
+*, *::before, *::after{
     box-sizing: border-box;
 }
 
 body{
+    padding: 0;
+    margin: 0;
     background-color:aquamarine;
     font: 200% Montserrat;
     height: 100vh;
 }
 
 .cal-container {
-    /* height: 100%;
-    margin: 0 auto;
-    max-width: 375px; */
     display: grid;
     justify-content: center;
     align-content: center;
-    min-height: 80vh;
+    min-height: 50vh;
     grid-template-columns: repeat(4, 100px);
     grid-template-rows: minmax(120px auto) repeat(5, 100px);
 }
@@ -29,18 +28,18 @@ body{
     align-items: flex-end;
     justify-content: space-around;
     flex-direction: column;
-    padding: 30px;
+    padding: 20px;
     word-wrap: break-word;
     word-break: break-all;
 }
-.output .input-before {
+.input-before {
     color: rgba(255, 255, 255, .75);
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
   
-  .output .input-current{
+.input-current{
     color: white;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
   }
   button {
     cursor: pointer;
